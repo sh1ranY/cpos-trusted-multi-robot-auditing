@@ -1,0 +1,27 @@
+{
+  "name": "cpos-blockchain-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local lightweight blockchain test network, smart contract, and client for CPoS weekly deliverables.",
+  "scripts": {
+    "node": "hardhat node --hostname 127.0.0.1 --port 8545",
+    "compile": "node scripts/compile.js",
+    "deploy": "node scripts/deploy.js",
+    "client": "node client/client.js",
+    "client:demo": "node client/client.js demo",
+    "client:submit": "node client/client.js submit",
+    "client:get": "node client/client.js get",
+    "client:list": "node client/client.js list"
+  },
+  "dependencies": {
+    "ethers": "^6.16.0",
+    "hardhat": "^3.0.0",
+    "solc": "^0.8.30"
+  },
+  "overrides": {
+    "tmp": "^0.2.6",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {}
+}

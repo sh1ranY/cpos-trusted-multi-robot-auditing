@@ -1,0 +1,8 @@
+node_modules
+artifacts/
+cache/
+deployments/
+.env
+.env.*
+!.env.example
+.DS_Store
